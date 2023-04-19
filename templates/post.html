@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Post {{ post_id }}</title>
+</head>
+<body>
+    <h1>Post {{ post_id }}</h1>
+    <nav>
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('about') }}">About</a>
+        <a href="{{ url_for('blog') }}">Blog</a>
+    </nav>
+    <p>This is the content of post {{ post_id }}.</p>
